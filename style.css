@@ -1,0 +1,211 @@
+ 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+.site-header {
+    background-color: #2457a7;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.site-header h1 {
+    margin-top: 0;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+.component-section {
+    margin-top: 40px;
+}
+
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font: inherit;
+    background-color: white;
+    color: #222;
+}
+
+button,
+.button-link,
+.close-button {
+    display: inline-block;
+    background-color: #2457a7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button-link:hover,
+.close-button:hover {
+    background-color: #163d78;
+}
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #e58b00;
+    outline-offset: 3px;
+}
+
+
+.alert {
+    background-color: #d9f5df;
+    color: #145523;
+    border: 1px solid #75c789;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+/* CSS-only Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.modal:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    color: #222;
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.close-button {
+    margin-top: 10px;
+}
+
+
+.site-footer {
+    margin-top: 50px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (min-width: 600px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #f1f1f1;
+    }
+
+    .card,
+    form {
+        background-color: #242424;
+        color: #f1f1f1;
+        border-color: #555;
+    }
+
+    input,
+    select {
+        background-color: #333;
+        color: white;
+        border-color: #888;
+    }
+
+    .alert {
+        background-color: #173d25;
+        color: #d7f7df;
+        border-color: #438657;
+    }
+
+    .site-header {
+        background-color: #182f52;
+    }
+
+    .site-footer {
+        background-color: #080808;
+    }
+
+    .modal-content {
+        background-color: #242424;
+        color: #f1f1f1;
+    }
+}

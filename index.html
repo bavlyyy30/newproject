@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Component Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>My Component Library</h1>
+        <p>A responsive website built with HTML and CSS.</p>
+    </header>
+
+    <main class="container">
+
+
+        <section>
+            <h2>Responsive Layout</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Component One</h3>
+                    <p>This is the first responsive card.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Component Two</h3>
+                    <p>This is the second responsive card.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Component Three</h3>
+                    <p>This is the third responsive card.</p>
+                </article>
+            </div>
+        </section>
+
+        
+        <section class="component-section">
+            <h2>Form Components</h2>
+
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Choose your country</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="saudi-arabia">Saudi Arabia</option>
+                        <option value="uae">United Arab Emirates</option>
+                        <option value="spain">Spain</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        
+        <section class="component-section">
+            <h2>Alert / Notification</h2>
+
+            <div class="alert" role="status">
+                <strong>Success!</strong>
+                Your information is displayed successfully.
+            </div>
+        </section>
+
+        
+        <section class="component-section">
+            <h2>CSS-only Modal</h2>
+
+            <a href="#modal" class="button-link">Open Modal</a>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <h2>Welcome!</h2>
+                    <p>This modal is created using CSS only, without JavaScript.</p>
+                    <a href="#" class="close-button">Close</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 My Component Library</p>
+    </footer>
+
+</body>
+</html>
